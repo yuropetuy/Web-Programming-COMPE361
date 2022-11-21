@@ -23,11 +23,16 @@ class UsersGui(QMainWindow):
     def __init__(self):
         super(UsersGui,self).__init__()
         uic.loadUi('users_photo.ui', self)
+        # self.user_labels = []
         self.row_length = 6
         self.show()
         self.load_users_data()
 
     def load_users_data(self):
+        # for label in self.user_labels:
+        #     label.setParent(None)
+        while self.layout_users.count():
+            self.layout_users.itemAt(0).widget().setParent(None)
         self.df_users = pd.read_excel('Assignment4.xlsx', sheet_name='users')
         row_index = -1
         for i in range(len(self.df_users)):
@@ -41,10 +46,13 @@ class UsersGui(QMainWindow):
             user.setFixedWidth(300)
             user.setFixedHeight(300)
             user.mousePressEvent = lambda e, id = self.df_users.id[i]: self.show_user(id)
+            # self.user_labels.append(user)
             self.layout_users.addWidget(user, row_index, column_index)
+
 
     def show_user(self, id):
         self.show_user_gui = ShowUserGui(id)
+        self.load_users_data()
 
 
 app = QApplication([])
