@@ -19,7 +19,7 @@ class ShowUserGui(QMainWindow):
     def __init__(self, id):
         super(ShowUserGui,self).__init__()
         uic.loadUi('show_user.ui', self)
-        self.df_users = pd.read_excel('Assignment4.xlsx', sheet_name='users')
+        self.df_users = pd.read_excel('Assignment4.xlsx', sheet_name ='users')
         self.user = self.df_users.loc[self.df_users.id == id].reset_index()
         self.id = id
         self.le_username.setText(str(self.user.username[0]))
