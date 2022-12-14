@@ -6,26 +6,53 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>479</width>
-    <height>767</height>
+    <width>476</width>
+    <height>454</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Homepage</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="logout_btn">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>80</x>
       <y>10</y>
-      <width>171</width>
-      <height>28</height>
+      <width>321</width>
+      <height>391</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Logout</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="user_btn">
+       <property name="text">
+        <string>User Management</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="book_btn">
+       <property name="text">
+        <string>Book Management</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="order_btn">
+       <property name="text">
+        <string>Order Management</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="logout_btn">
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -33,7 +60,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>479</width>
+     <width>476</width>
      <height>26</height>
     </rect>
    </property>
