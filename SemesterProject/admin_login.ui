@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Login</class>
- <widget class="QMainWindow" name="Login">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>508</width>
-    <height>253</height>
+    <width>510</width>
+    <height>264</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Login</string>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="login_btn">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>60</x>
       <y>170</y>
       <width>171</width>
       <height>28</height>
@@ -27,52 +27,23 @@
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="cancel_btn">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>170</y>
-      <width>171</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Close</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="title_label">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>210</x>
       <y>20</y>
-      <width>221</width>
+      <width>181</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Bookshop Management System</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="user_le">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>60</y>
-      <width>381</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="placeholderText">
-     <string>Username</string>
+     <string>Admin Verification</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="pass_le">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>60</x>
       <y>110</y>
       <width>381</width>
       <height>22</height>
@@ -94,13 +65,42 @@
      <string>Password</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="cancel_btn">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>170</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="user_le">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>381</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Username</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>508</width>
+     <width>510</width>
      <height>26</height>
     </rect>
    </property>
