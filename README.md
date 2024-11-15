@@ -1,6 +1,6 @@
 ## COMPE361
 
-Introductory course to web programming. All course materials were taught in Python and consisted primarily of learning the Python lanaguage and using it for managing and manipoulating datasets.
+Introductory course to web programming. All course materials were taught in Python and consisted primarily of learning the Python lanaguage and using it for managing and manipulating datasets.
 
 This repo includes some assignment work on learning to use pandas to manipulate data.
 
